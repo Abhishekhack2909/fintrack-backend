@@ -6,8 +6,17 @@
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)](https://expressjs.com/)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=flat)](https://fintrack-backend-i555.onrender.com)
 
-<!-- Add after deployment: [![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=flat)](https://your-app.onrender.com) -->
+## 🌐 Live Demo
+
+**API Base URL**: https://fintrack-backend-i555.onrender.com
+
+Try it now:
+- **Health Check**: https://fintrack-backend-i555.onrender.com/health
+- **API Info**: https://fintrack-backend-i555.onrender.com/
+
+> **Note**: Free tier may sleep after 15 min of inactivity. First request takes ~30s to wake up.
 
 ## ✨ Features
 
@@ -21,6 +30,8 @@
 
 ## 🚀 Quick Start
 
+### Local Development
+
 ```bash
 # Install dependencies
 npm install
@@ -33,6 +44,15 @@ npm run dev
 ```
 
 Server runs at `http://localhost:3000`
+
+### Using Live API
+
+No setup needed! Just use the live API:
+```
+https://fintrack-backend-i555.onrender.com
+```
+
+Import the Postman collection and start testing immediately.
 
 ## 🔑 Test Credentials
 
@@ -74,8 +94,22 @@ GET /api/dashboard/weekly
 
 ## 🧪 Testing
 
-### Postman
-Import `Finance_Backend.postman_collection.json` for instant testing with pre-configured requests.
+### Option 1: Test Live API (Easiest)
+
+**Using Postman**:
+1. Import `Finance_Backend.postman_collection.json`
+2. Collection is pre-configured with live URL
+3. Go to "Authentication" → "Login as Admin"
+4. Click Send (token auto-saves)
+5. Test any endpoint!
+
+**Using Browser**:
+- Health: https://fintrack-backend-i555.onrender.com/health
+- API Info: https://fintrack-backend-i555.onrender.com/
+
+### Option 2: Test Locally
+
+Change Postman `baseUrl` variable to `http://localhost:3000` and run `npm run dev`
 
 ### cURL Example
 ```bash

@@ -7,7 +7,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "http://localhost:3000",
+			"value": "https://fintrack-backend-i555.onrender.com",
 			"type": "string"
 		},
 		{
